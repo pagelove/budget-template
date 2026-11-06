@@ -97,3 +97,9 @@ Final scoped new-interaction corrections: Undo restores focus to its record; man
 
 ## PRODUCT-READINESS-INTERACTION-VERIFIED — 2026-11-06T14:26:44.615Z — Codex
 Completed focus restoration, scoped manual ordering and safe controls before source loading. Query-versioned module dependencies prevent stale helpers after publication. Checks: all 34 behavioral tests and complete source/deploy checks passed; public conditional deployment/readback recorded centrally. Files: app.mjs, product.mjs, domain.mjs, index.html. No data or trust-boundary changes.
+
+## DEMO-LAYOUT-PLAN — 2026-11-06T18:00:21.889Z — Codex
+User: Check all demos for misses like the Move to album wrap. Plan: Previous month wrapped into an unequal-height button, and narrow metric cells split currency amounts mid-number. Target site/styles.css, site/index.html; CSS layout only, preserve chosen design, source records and behavior. Verify actual hosted320/768/1024/1280 layouts and affected existing checks. Parent evidence: audit/2026-11-06-demo-layout-review/.
+
+## DEMO-LAYOUT-RESULT — 2026-11-06T18:09:25.050Z — Codex
+Plan DEMO-LAYOUT-PLAN completed. Short controls remain intact, whole groups reflow, narrow figures/labels have readable space. Files and hashes: audit/layout-review-20261106.json. Hosted layout/screenshots verified; existing affected tests and community source checks pass. Existing records unchanged. No domain or persistence changes. Root review records publisher CRM projection correction, exact receipts and viewport limitations.

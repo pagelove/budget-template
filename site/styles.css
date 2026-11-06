@@ -123,3 +123,6 @@ footer{padding-block:var(--design-section-gap);border-color:var(--border-regular
 @media(prefers-reduced-motion:reduce){.record-open,.product-controls button{transition:none}}
 
 .toolbar>.product-controls{margin:0;flex:0 1 auto;align-self:flex-end}.product-overview{order:0}.workspace>.product-overview{flex:1 1 100%}.workspace>.domain-profile{margin-top:0}.toolbar:has(.product-controls){align-items:flex-end;gap:16px}.toolbar>.search{flex:1 1 240px;max-width:420px}.toolbar>.product-controls label{min-width:160px}@media(max-width:650px){.toolbar>.search{max-width:none}.toolbar>.product-controls{width:100%;flex:1 1 100%}.toolbar>.product-controls label{flex:1}}
+
+/* Reflow whole period actions and preserve complete currency figures. */
+.period-controls>button{flex:0 0 auto;white-space:nowrap}.product-stat strong{overflow-wrap:normal;word-break:normal;white-space:nowrap}@media(max-width:450px){[data-app=budget] .product-metrics{grid-template-columns:minmax(0,1fr)}}
