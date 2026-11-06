@@ -1,0 +1,16 @@
+{
+  "design": "classic",
+  "mode": "light",
+  "titleLines": [
+    "Know where it goes."
+  ],
+  "titleSize": 82,
+  "descriptionLines": [
+    "Manual records in USD. Transfers are excluded from income and expenses."
+  ],
+  "fonts": [
+    "Source Serif 4",
+    "Inter"
+  ],
+  "safeInset": 64
+}

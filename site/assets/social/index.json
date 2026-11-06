@@ -1,0 +1,78 @@
+{
+  "defaultDesign": "classic",
+  "defaultMode": "dark",
+  "defaultImage": {
+    "url": "https://kayak-draw-9549.onpagelove.com/onboarding/after/demos/design-refresh-20261106/budget/assets/social/default.png",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png",
+    "alt": "Everyday Budget — Know where it goes."
+  },
+  "designs": [
+    {
+      "design": "classic",
+      "name": "Classic",
+      "mode": "light",
+      "prefix": "designs/classic/assets/social/light",
+      "image": {
+        "url": "https://kayak-draw-9549.onpagelove.com/onboarding/after/demos/design-refresh-20261106/budget/designs/classic/assets/social/light.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Everyday Budget — Know where it goes."
+      }
+    },
+    {
+      "design": "classic",
+      "name": "Classic",
+      "mode": "dark",
+      "prefix": "designs/classic/assets/social/dark",
+      "image": {
+        "url": "https://kayak-draw-9549.onpagelove.com/onboarding/after/demos/design-refresh-20261106/budget/designs/classic/assets/social/dark.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Everyday Budget — Know where it goes."
+      }
+    }
+  ],
+  "pages": [
+    "assets/metadata/default.json"
+  ],
+  "generatedFiles": [
+    "assets/identity/apple-touch-icon.png",
+    "assets/identity/favicon-16.png",
+    "assets/identity/favicon-32.png",
+    "assets/identity/favicon-48.png",
+    "assets/identity/favicon.ico",
+    "assets/identity/favicon.svg",
+    "assets/identity/icon-192.png",
+    "assets/identity/icon-512.png",
+    "assets/identity/maskable-512.png",
+    "assets/identity/site.webmanifest",
+    "assets/metadata/default.head.html",
+    "assets/metadata/default.json",
+    "assets/social/dark.layout.json",
+    "assets/social/dark.png",
+    "assets/social/dark.source.svg",
+    "assets/social/dark.svg",
+    "assets/social/default.layout.json",
+    "assets/social/default.png",
+    "assets/social/default.source.svg",
+    "assets/social/default.svg",
+    "assets/social/index.json",
+    "assets/social/light.layout.json",
+    "assets/social/light.png",
+    "assets/social/light.source.svg",
+    "assets/social/light.svg",
+    "designs/classic/assets/social/dark.layout.json",
+    "designs/classic/assets/social/dark.png",
+    "designs/classic/assets/social/dark.source.svg",
+    "designs/classic/assets/social/dark.svg",
+    "designs/classic/assets/social/light.layout.json",
+    "designs/classic/assets/social/light.png",
+    "designs/classic/assets/social/light.source.svg",
+    "designs/classic/assets/social/light.svg",
+    "examples/branding.html"
+  ]
+}

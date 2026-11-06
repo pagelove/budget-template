@@ -1,64 +1,209 @@
 {
   "repository": "pagelove/design-system",
-  "revision": "dec4b08d12b98261bb6b52d9bfeb07c876b8f89d",
+  "revision": "f41f4476b636c3b353f024c2cb9a1e2067b7de6b",
   "design": "classic",
   "mode": "dark",
-  "integration": "Complete independent selected theme plus shared base/components; local selected heading/body/code font families.",
+  "integration": "Current independent complete theme, canonical components/base/forced-colors, local WOFF2 fonts; canonical identity renderer and selected-mode fonts vendored unchanged.",
   "files": [
     {
-      "source": "designs/classic/styles/theme.css",
-      "file": "theme.css",
-      "sha256": "b563fce0365004a494dba517072bae1b68ce2012f0f440bff8f63a36ae63886f"
+      "source": "styles/library-components.css",
+      "file": "site/assets/pagelove-design/library-components.css",
+      "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
     },
     {
-      "source": "designs/classic/DESIGN.md",
-      "file": "DESIGN.md",
-      "sha256": "892aded46a76c6f9bb4d6d8b2e031f7dddac03aa5ef71bf9abaf3a90cd9ef549"
+      "source": "styles/base.css",
+      "file": "site/assets/pagelove-design/base.css",
+      "sha256": "464c15ca553f2590c88b7f0153523150e02169d64b3cd75dabefe0cfc6382ec8"
+    },
+    {
+      "source": "styles/forced-colors.css",
+      "file": "site/assets/pagelove-design/forced-colors.css",
+      "sha256": "5bb23084a34d6ba803bb72607dde2fe038a626ea1d78010ae6d07b7ec44b9568"
+    },
+    {
+      "source": "designs/classic/styles/theme.css",
+      "file": "site/assets/pagelove-design/theme.css",
+      "sha256": "4d9a61a49138e6a15c11f642670596261a6fb51ba7817a5211174c1e9162e77c"
+    },
+    {
+      "source": "designs/classic/.stitch/dark.DESIGN.md",
+      "file": "site/assets/pagelove-design/DESIGN.md",
+      "sha256": "960cfa255d8a8e9a48f2bc1ec6b7e596875008ccff1d81ba178f950fe1b202d3"
+    },
+    {
+      "source": "docs/polish.md",
+      "file": "site/assets/pagelove-design/polish.md",
+      "sha256": "3c646c731759e930fd0990a1bb40915a1d009ac9f878fa105868eeaee4c1aa21"
+    },
+    {
+      "source": "docs/identity-and-sharing.md",
+      "file": "site/assets/pagelove-design/identity-and-sharing.md",
+      "sha256": "5baccb52a3a1c4245a8b44f07126ad075f18c0de0c04513b8caa40254b2262b9"
+    },
+    {
+      "source": "LICENSE",
+      "file": "site/assets/pagelove-design/LICENSE",
+      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
+    },
+    {
+      "source": "NOTICE.md",
+      "file": "site/assets/pagelove-design/NOTICE.md",
+      "sha256": "69c5500361debed20c6c65c58134c1bc3bdee850d38cc6b36b8645444bd0544c"
+    },
+    {
+      "source": "assets/fonts/inter-400.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/inter-400.woff2",
+      "sha256": "d1a20563ae7e08801c3ecb213f504453d1ce79bff1bd4412ecc30247e1201556"
     },
     {
       "source": "assets/fonts/inter-400.ttf",
-      "file": "assets/fonts/inter-400.ttf",
+      "file": "scripts/identity-kit/assets/fonts/inter-400.ttf",
       "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
     },
     {
+      "source": "assets/fonts/inter-500.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/inter-500.woff2",
+      "sha256": "045af74a76dbdb334d8bb89039af97a87868beeb6b40fe50fec17f98c64dca6c"
+    },
+    {
       "source": "assets/fonts/inter-500.ttf",
-      "file": "assets/fonts/inter-500.ttf",
+      "file": "scripts/identity-kit/assets/fonts/inter-500.ttf",
       "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
     },
     {
+      "source": "assets/fonts/inter-600.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/inter-600.woff2",
+      "sha256": "daae5f013158a850421029f366034c619d183e704fbb3a77d746ac7d6fb1a52a"
+    },
+    {
       "source": "assets/fonts/inter-600.ttf",
-      "file": "assets/fonts/inter-600.ttf",
+      "file": "scripts/identity-kit/assets/fonts/inter-600.ttf",
       "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
     },
     {
+      "source": "assets/fonts/inter-OFL.txt",
+      "file": "site/assets/pagelove-design/assets/fonts/inter-OFL.txt",
+      "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
+    },
+    {
+      "source": "assets/fonts/inter-OFL.txt",
+      "file": "scripts/identity-kit/assets/fonts/inter-OFL.txt",
+      "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
+    },
+    {
+      "source": "assets/fonts/sourceserif4-400.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-400.woff2",
+      "sha256": "80ae4e9165e405a08e066555bd4af7d0fd76f7152477eba4737bac92fe8580bd"
+    },
+    {
       "source": "assets/fonts/sourceserif4-400.ttf",
-      "file": "assets/fonts/sourceserif4-400.ttf",
+      "file": "scripts/identity-kit/assets/fonts/sourceserif4-400.ttf",
       "sha256": "f01900495012279f1e95d721c59363395eeffb79ef806eaa4dfa8bd923ccec0b"
     },
     {
+      "source": "assets/fonts/sourceserif4-500.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-500.woff2",
+      "sha256": "6f15d14ad878b98e5526587995a24fe73898d747e57780230256181f37949b81"
+    },
+    {
       "source": "assets/fonts/sourceserif4-500.ttf",
-      "file": "assets/fonts/sourceserif4-500.ttf",
+      "file": "scripts/identity-kit/assets/fonts/sourceserif4-500.ttf",
       "sha256": "2e76f944e209d9af33d2420ec5b03db8676375aa73f55be489c6e5a8d0eabeff"
     },
     {
+      "source": "assets/fonts/sourceserif4-600.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-600.woff2",
+      "sha256": "b55cba011a1977bf8f41828eff3b87d446f626ba941d338521d849a834a00cb1"
+    },
+    {
       "source": "assets/fonts/sourceserif4-600.ttf",
-      "file": "assets/fonts/sourceserif4-600.ttf",
+      "file": "scripts/identity-kit/assets/fonts/sourceserif4-600.ttf",
       "sha256": "0b03b227d7edf5addbf0094b88c3aa1d66d9448b2b501ed686eb4818b691c247"
     },
     {
+      "source": "assets/fonts/sourceserif4-OFL.txt",
+      "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-OFL.txt",
+      "sha256": "bf6b2ac206a3ebafe68bfea53b83a4982af4c65a071b401a32fe1103477a487f"
+    },
+    {
+      "source": "assets/fonts/sourceserif4-OFL.txt",
+      "file": "scripts/identity-kit/assets/fonts/sourceserif4-OFL.txt",
+      "sha256": "bf6b2ac206a3ebafe68bfea53b83a4982af4c65a071b401a32fe1103477a487f"
+    },
+    {
+      "source": "assets/fonts/firacode-400.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/firacode-400.woff2",
+      "sha256": "366b381c42a5e943ca3881a179242d995ecef43bda7dae70bd479136fc5c5169"
+    },
+    {
       "source": "assets/fonts/firacode-400.ttf",
-      "file": "assets/fonts/firacode-400.ttf",
+      "file": "scripts/identity-kit/assets/fonts/firacode-400.ttf",
       "sha256": "edc273e94e72c8ee4279c8406f65373d96c518e3fea9cc3f121fed51283e0e70"
     },
     {
+      "source": "assets/fonts/firacode-500.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/firacode-500.woff2",
+      "sha256": "e7eafcfb1ad6bd4d31106049170192cf9b581f5dc8e430bb16740cf901ee4bab"
+    },
+    {
       "source": "assets/fonts/firacode-500.ttf",
-      "file": "assets/fonts/firacode-500.ttf",
+      "file": "scripts/identity-kit/assets/fonts/firacode-500.ttf",
       "sha256": "f50a6f8bc4518eb4a3df9c9726f33d37ef73f7bc6f2ac845cf772c350cfe38cb"
     },
     {
+      "source": "assets/fonts/firacode-600.woff2",
+      "file": "site/assets/pagelove-design/assets/fonts/firacode-600.woff2",
+      "sha256": "22529253eb4bf540a4654007c04e09abbf0350c3d3782cedc2bd7ec18716e4fd"
+    },
+    {
       "source": "assets/fonts/firacode-600.ttf",
-      "file": "assets/fonts/firacode-600.ttf",
+      "file": "scripts/identity-kit/assets/fonts/firacode-600.ttf",
       "sha256": "a4d23253c085549ee11a66a18f77aaa5703ebb44bcb4739c4c53c3f26040d863"
+    },
+    {
+      "source": "assets/fonts/firacode-OFL.txt",
+      "file": "site/assets/pagelove-design/assets/fonts/firacode-OFL.txt",
+      "sha256": "659316f4897367d11f1f6af35fe07b653b4d7c7f1187cbec4dd0a39aa12fbdfb"
+    },
+    {
+      "source": "assets/fonts/firacode-OFL.txt",
+      "file": "scripts/identity-kit/assets/fonts/firacode-OFL.txt",
+      "sha256": "659316f4897367d11f1f6af35fe07b653b4d7c7f1187cbec4dd0a39aa12fbdfb"
+    },
+    {
+      "source": "scripts/branding.mjs",
+      "file": "scripts/identity-kit/scripts/branding.mjs",
+      "sha256": "424ff10555773eca76b78cfeada7c0d0bb6b9c6280274e3730dbbd62d1303f0c"
+    },
+    {
+      "source": "scripts/branding-preview.mjs",
+      "file": "scripts/identity-kit/scripts/branding-preview.mjs",
+      "sha256": "1a61947f5ddc7e5c58690f6531fd721228fff489fc4bfc3204beb88f8dd6647c"
+    },
+    {
+      "source": "scripts/designs.mjs",
+      "file": "scripts/identity-kit/scripts/designs.mjs",
+      "sha256": "d5e61138682e52c79315fb7fa7f3ef20c5bdf01ffbd0617fcc8bf5a38b5b4496"
+    },
+    {
+      "source": "components/metadata.mjs",
+      "file": "scripts/identity-kit/components/metadata.mjs",
+      "sha256": "4896427f366f87d5999806240d538f6a2d50815c281adeab12a2c01b1008df4f"
+    },
+    {
+      "source": "schemas/branding.schema.json",
+      "file": "scripts/identity-kit/schemas/branding.schema.json",
+      "sha256": "1fcfea7f272ebab5dad6e1566bff654378b550b47a797dc709c66ac1ee77b65e"
+    },
+    {
+      "source": "branding/templates.json",
+      "file": "scripts/identity-kit/branding/templates.json",
+      "sha256": "7f00d41a2b23663bf2ea1126a6ce70f325f847a3778556085204fbe5cf7bc178"
+    },
+    {
+      "source": "LICENSE",
+      "file": "scripts/identity-kit/LICENSE",
+      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
     }
   ]
 }
