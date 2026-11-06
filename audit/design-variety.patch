@@ -1,0 +1,1105 @@
+diff --git a/ASSETS.md b/ASSETS.md
+index f054e34..65a33cb 100644
+--- a/ASSETS.md
++++ b/ASSETS.md
+@@ -3,3 +3,5 @@
+ Pagelove styles: https://github.com/pagelove/design-system/tree/0ca2336353647b8d2d726470046617163bbf6d67/styles, MIT; license included in site/assets/pagelove-design/LICENSE. System font fallbacks; no downloaded fonts. All seed text is fictional and original. User uploads retain their own rights and must have suitable permission.
+ 
+ Design refresh: Midnight independent theme and shared base/components from pagelove/design-system at dec4b08d12b98261bb6b52d9bfeb07c876b8f89d; MIT notices retained. Local Inter400/500/600 fonts are OFL licensed with included inter-OFL.txt. No external font service.
++
++Design variety update: selected Classic/dark, source dec4b08d12b98261bb6b52d9bfeb07c876b8f89d; unchanged selected theme/guide plus licensed Inter, Source Serif 4, Fira Code families at400/500/600. All font OFL notices retained. Historical Midnight files/provenance remain historical; active imports follow docs/design-source.json.
+diff --git a/DESIGN.md b/DESIGN.md
+index 6e313b8..f4a149b 100644
+--- a/DESIGN.md
++++ b/DESIGN.md
+@@ -1,9 +1,11 @@
+-# Everyday Budget
++# budget — Classic
+ 
+-Foundation: pagelove/design-system @ dec4b08d12b98261bb6b52d9bfeb07c876b8f89d. Selected design: Midnight / dark, the catalog default. Read the vendored design guide and provenance in docs/design-source.json. The independent theme is copied unchanged from upstream; do not edit generated values. Shared component/base CSS plus licensed local Inter fonts supply controls and typography. Midnight has no light mode.
++Selected: **Classic / dark** from pagelove/design-system @ dec4b08d12b98261bb6b52d9bfeb07c876b8f89d. This assignment is part of the nine-app comparison covering all five designs and all eight available design/mode combinations. Use the complete selected design, never a palette mixed with Midnight.
+ 
+-Use plum page/panel/inset surfaces, semantic lavender actions, 44px targets, exported spacing, compact geometry and sans-serif headings. App-specific layout is site/styles.css: publishing pages use clear open introductions and service/project/article compositions; personal tools use compact task/report collections. Keep neutral borders, no decorative northeast arrows or accent card rails. Preserve document-first domain/persistence and draft/conflict contracts from docs/architecture.md. Images are documented sample reference artwork, never claims of client work.
++Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract.
+ 
+-Verification: check/test/prepare and responsive/browser tasks pending for this revision.
++Canonical selected theme and its guide are vendored unchanged under site/assets/pagelove-design/. Component/base CSS remains shared; local licensed heading/body/code fonts are included. docs/design-source.json records exact source hashes. App-specific semantic layout remains site/styles.css, using design geometry/spacing/type roles. Preserve neutral borders,44px controls, visible focus, reduced-motion rules and no decorative northeast arrows.
+ 
+-Verified: check, full model/domain/persistence/deployment tests and prepare pass. Browser desktop1280px/mobile320px layout, local Inter font loading, search empty/recovery, editor prefill/focus and Escape cancellation pass. See audit/design-refresh-checks.json. Physical-device/screen-reader and OS motion emulation not exercised; inherited reduced-motion rules retained.
++Domain format1/HTML authority, typed settings, recovery/concurrency and save/access limitations remain in docs/architecture.md. This design change does not migrate user records. Verification pending for this revision.
++
++Verified: full check/test/prepare pass;1280px and320px browser layouts, actual selected heading/body fonts, source theme geometry/colors, search no-results/recovery, editor focus and Escape cancellation pass. See audit/design-variety-checks.json. Existing persistence/access limitations remain; no live private-data deployment.
+diff --git a/REVIEW.md b/REVIEW.md
+index 258fbf2..7dc7014 100644
+--- a/REVIEW.md
++++ b/REVIEW.md
+@@ -27,3 +27,6 @@ PASS: repository check, full tests and prepared-site credential scan; eleven add
+ 
+ ## Midnight design refresh
+ Adopted pagelove/design-system dec4b08 Midnight/dark. Browser screenshots and checks are in audit/. The redesign preserves format1 and existing persistence/access limitations. Existing deployed records remain preserved. Local check/tests/prepare and desktop/mobile/editor/search tasks pass; physical-device/screen-reader and OS motion emulation remain outside this review.
++
++## Design collection coverage
++Current assigned design/mode is recorded in DESIGN.md and docs/design-source.json. This supersedes the historical all-Midnight selection above. Local check/test/prepare and desktop/mobile/search/editor checks pass; see audit/design-variety-checks.json and audit/screenshots/variety-*.jpg. No records/persistence/access contract changes.
+diff --git a/audit/CHANGELOG.md b/audit/CHANGELOG.md
+index f0208ed..2427029 100644
+--- a/audit/CHANGELOG.md
++++ b/audit/CHANGELOG.md
+@@ -47,3 +47,12 @@ DESIGN-REFRESH mobile correction 2026-11-06T00:03:23.895Z: at320px long brand pl
+ 
+ ## DESIGN-REFRESH-VERIFIED — 2026-11-06T00:06:09.536Z
+ Actor: Codex; reference DESIGN-REFRESH-PLAN. check/full model-domain-persistence-deployment tests/prepare pass. Actual1280px/320px browser checks show loaded local Inter and no page overflow,≥44px visible controls. Search no-results/recovery, native editor focus/prefill and Escape cancellation pass; Photo Album next/close viewer passes. Final screenshots inspected after spacing/header fixes. Site SHA256 and browser results saved. Reduced-motion rules retained; OS emulation/physical devices/screen readers untested. No user source migrations or new production guarantees. Publication next.
++
++## DESIGN-VARIETY-PLAN — 2026-11-06T00:24:14.315Z
++Actor: Codex. User requests coverage across all available designs rather than all-Midnight. Plan: use scoped app mapping in docs/design-source.json, selected complete theme/mode and corresponding licensed local fonts. Preserve format1 records, editor/save/recovery semantics and existing app layout. Update design documentation/provenance, run checks/tests/prepare, inspect desktop/mobile/control tasks and publish exact matching screenshot/repo. No additional access guarantees or user-record migration. Pending.
++
++## DESIGN-VARIETY-APPLIED — 2026-11-06T00:24:59.711Z
++Actor: Codex; reference DESIGN-VARIETY-PLAN. Selected complete Classic/dark theme, fonts and type/shape/spacing roles from dec4b08d12b98261bb6b52d9bfeb07c876b8f89d. Independent theme bytes unchanged; no domain/app behavior/source record changes. Design documentation/provenance updated. Browser/check verification pending.
++
++## DESIGN-VARIETY-VERIFIED — 2026-11-06T00:27:44.985Z
++Actor: Codex; reference DESIGN-VARIETY-PLAN. classic/dark renders full selected typography/colors/geometry with local fonts. check/full model-domain-persistence-deployment tests/prepare pass. Desktop1280/mobile320 no page overflow; native search empty/recovery and editor focus/Escape pass. Screenshots inspected, source hashes/results saved. No app behavior or source record changes. Device motion rules retained; OS emulation/physical devices/screen readers untested. Publication next.
+diff --git a/audit/design-variety-checks.json b/audit/design-variety-checks.json
+new file mode 100644
+index 0000000..ff86d52
+--- /dev/null
++++ b/audit/design-variety-checks.json
+@@ -0,0 +1,56 @@
++{
++  "utc": "2026-11-06T00:27:44.957Z",
++  "app": "budget",
++  "design": "classic",
++  "mode": "dark",
++  "desktop": {
++    "app": "budget",
++    "background": "rgb(0, 2, 8)",
++    "bodyFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
++    "bodyFontReady": true,
++    "cardRadius": "0px",
++    "design": "classic",
++    "headingFamily": "\"Source Serif 4\", Georgia, serif",
++    "headingFontReady": true,
++    "mode": "dark",
++    "overflow": false
++  },
++  "mobile": {
++    "app": "budget",
++    "headerActionHeight": 46,
++    "overflow": false,
++    "width": 320
++  },
++  "tasks": {
++    "app": "budget",
++    "empty": "0 transactions",
++    "dialogFocus": true,
++    "escapeCloses": true
++  },
++  "checks": [
++    {
++      "args": [
++        "scripts/check.mjs"
++      ],
++      "status": 0
++    },
++    {
++      "args": [
++        "--test",
++        "tests/model.test.mjs",
++        "tests/domain.test.mjs",
++        "tests/persistence.test.mjs",
++        "tests/deployment.test.mjs"
++      ],
++      "status": 0
++    },
++    {
++      "args": [
++        "scripts/deploy.mjs",
++        "--prepare"
++      ],
++      "status": 0
++    }
++  ],
++  "limits": "Browser local fixture; OS motion emulation/physical device/screen reader and new production permissions not tested."
++}
+diff --git a/audit/design-variety-sha256.json b/audit/design-variety-sha256.json
+new file mode 100644
+index 0000000..06025d4
+--- /dev/null
++++ b/audit/design-variety-sha256.json
+@@ -0,0 +1,110 @@
++[
++  {
++    "file": "site/app.mjs",
++    "sha256": "ad916532f14d969e90fbd308684bb52b89a2932b3bac131aa53056b68aac2012"
++  },
++  {
++    "file": "site/assets/pagelove-design/app.css",
++    "sha256": "f1466c8f368cacc3a3e7f0c0d5aa3c6744384ba0821600dccdb60f87a84ee7d2"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/firacode-400.ttf",
++    "sha256": "edc273e94e72c8ee4279c8406f65373d96c518e3fea9cc3f121fed51283e0e70"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/firacode-500.ttf",
++    "sha256": "f50a6f8bc4518eb4a3df9c9726f33d37ef73f7bc6f2ac845cf772c350cfe38cb"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/firacode-600.ttf",
++    "sha256": "a4d23253c085549ee11a66a18f77aaa5703ebb44bcb4739c4c53c3f26040d863"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/firacode-OFL.txt",
++    "sha256": "659316f4897367d11f1f6af35fe07b653b4d7c7f1187cbec4dd0a39aa12fbdfb"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-400.ttf",
++    "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-500.ttf",
++    "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-600.ttf",
++    "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-OFL.txt",
++    "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-400.ttf",
++    "sha256": "f01900495012279f1e95d721c59363395eeffb79ef806eaa4dfa8bd923ccec0b"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-500.ttf",
++    "sha256": "2e76f944e209d9af33d2420ec5b03db8676375aa73f55be489c6e5a8d0eabeff"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-600.ttf",
++    "sha256": "0b03b227d7edf5addbf0094b88c3aa1d66d9448b2b501ed686eb4818b691c247"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/sourceserif4-OFL.txt",
++    "sha256": "bf6b2ac206a3ebafe68bfea53b83a4982af4c65a071b401a32fe1103477a487f"
++  },
++  {
++    "file": "site/assets/pagelove-design/base.css",
++    "sha256": "0f38ac245b5d2a24008b2fe572c1936598d82dd4931d2943ce341db0db515008"
++  },
++  {
++    "file": "site/assets/pagelove-design/DESIGN.md",
++    "sha256": "892aded46a76c6f9bb4d6d8b2e031f7dddac03aa5ef71bf9abaf3a90cd9ef549"
++  },
++  {
++    "file": "site/assets/pagelove-design/fonts.css",
++    "sha256": "7ee2d671fc5d80ace35cd223cccdc584debb27d22c15e85785fdc088e0d869f3"
++  },
++  {
++    "file": "site/assets/pagelove-design/library-components.css",
++    "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
++  },
++  {
++    "file": "site/assets/pagelove-design/LICENSE",
++    "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
++  },
++  {
++    "file": "site/assets/pagelove-design/NOTICE.md",
++    "sha256": "64c68a9d4ad430d7a3291b37b5e405e6436cb20d53acf6972643269ddde75cea"
++  },
++  {
++    "file": "site/assets/pagelove-design/theme.css",
++    "sha256": "b563fce0365004a494dba517072bae1b68ce2012f0f440bff8f63a36ae63886f"
++  },
++  {
++    "file": "site/config.mjs",
++    "sha256": "c323c25ba70faebe4cde656c97a03636a509213acb586bbd7a2161a318302226"
++  },
++  {
++    "file": "site/domain.mjs",
++    "sha256": "0ebd2960ce8dc40dfafeb0b87796fdc90d757e20b4ec62595965a5e3578ce5f7"
++  },
++  {
++    "file": "site/index.html",
++    "sha256": "bd955a2050a021a71562ff943919689984d21aba36f414cb7e6dbbdf2ce89013"
++  },
++  {
++    "file": "site/model.mjs",
++    "sha256": "a1c33031e9fd32fb8988ec726a493a5e170e80c6c203274b868679642784e469"
++  },
++  {
++    "file": "site/records/content.html",
++    "sha256": "2e1056363ef97ac5d14c99a1d1b6a3acb88e97eb041b4b8ac52b5b93c225b1ed"
++  },
++  {
++    "file": "site/styles.css",
++    "sha256": "ed391e035cf8adb19d314670ffd22db37b04f7d1b416a81033bd4c7570db66ef"
++  }
++]
+diff --git a/audit/screenshots/variety-desktop.jpg b/audit/screenshots/variety-desktop.jpg
+new file mode 100644
+index 0000000..c9bb04f
+Binary files /dev/null and b/audit/screenshots/variety-desktop.jpg differ
+diff --git a/audit/screenshots/variety-mobile.jpg b/audit/screenshots/variety-mobile.jpg
+new file mode 100644
+index 0000000..4ae0145
+Binary files /dev/null and b/audit/screenshots/variety-mobile.jpg differ
+diff --git a/docs/design-source.json b/docs/design-source.json
+index a026bed..cf520aa 100644
+--- a/docs/design-source.json
++++ b/docs/design-source.json
+@@ -1,39 +1,19 @@
+ {
+   "repository": "pagelove/design-system",
+   "revision": "dec4b08d12b98261bb6b52d9bfeb07c876b8f89d",
+-  "design": "midnight",
++  "design": "classic",
+   "mode": "dark",
+-  "integration": "Independent theme, shared components/base; Inter-only font subset, licensed upstream files unchanged.",
++  "integration": "Complete independent selected theme plus shared base/components; local selected heading/body/code font families.",
+   "files": [
+     {
+-      "source": "styles/library-components.css",
+-      "file": "library-components.css",
+-      "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
+-    },
+-    {
+-      "source": "styles/base.css",
+-      "file": "base.css",
+-      "sha256": "0f38ac245b5d2a24008b2fe572c1936598d82dd4931d2943ce341db0db515008"
+-    },
+-    {
+-      "source": "designs/midnight/styles/theme.css",
++      "source": "designs/classic/styles/theme.css",
+       "file": "theme.css",
+-      "sha256": "d5a843bcec746058786ffdecef3e24cc1e75ec5f9b8a1e6b65781193b8742f5c"
++      "sha256": "b563fce0365004a494dba517072bae1b68ce2012f0f440bff8f63a36ae63886f"
+     },
+     {
+-      "source": "LICENSE",
+-      "file": "LICENSE",
+-      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
+-    },
+-    {
+-      "source": "NOTICE.md",
+-      "file": "NOTICE.md",
+-      "sha256": "64c68a9d4ad430d7a3291b37b5e405e6436cb20d53acf6972643269ddde75cea"
+-    },
+-    {
+-      "source": "designs/midnight/DESIGN.md",
++      "source": "designs/classic/DESIGN.md",
+       "file": "DESIGN.md",
+-      "sha256": "685c24f9ba02b26f9aabc06e1ba2d44d34ae9827f310e9add1bb1befa7fcfa5d"
++      "sha256": "892aded46a76c6f9bb4d6d8b2e031f7dddac03aa5ef71bf9abaf3a90cd9ef549"
+     },
+     {
+       "source": "assets/fonts/inter-400.ttf",
+@@ -51,9 +31,34 @@
+       "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
+     },
+     {
+-      "source": "assets/fonts/inter-OFL.txt",
+-      "file": "assets/fonts/inter-OFL.txt",
+-      "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
++      "source": "assets/fonts/sourceserif4-400.ttf",
++      "file": "assets/fonts/sourceserif4-400.ttf",
++      "sha256": "f01900495012279f1e95d721c59363395eeffb79ef806eaa4dfa8bd923ccec0b"
++    },
++    {
++      "source": "assets/fonts/sourceserif4-500.ttf",
++      "file": "assets/fonts/sourceserif4-500.ttf",
++      "sha256": "2e76f944e209d9af33d2420ec5b03db8676375aa73f55be489c6e5a8d0eabeff"
++    },
++    {
++      "source": "assets/fonts/sourceserif4-600.ttf",
++      "file": "assets/fonts/sourceserif4-600.ttf",
++      "sha256": "0b03b227d7edf5addbf0094b88c3aa1d66d9448b2b501ed686eb4818b691c247"
++    },
++    {
++      "source": "assets/fonts/firacode-400.ttf",
++      "file": "assets/fonts/firacode-400.ttf",
++      "sha256": "edc273e94e72c8ee4279c8406f65373d96c518e3fea9cc3f121fed51283e0e70"
++    },
++    {
++      "source": "assets/fonts/firacode-500.ttf",
++      "file": "assets/fonts/firacode-500.ttf",
++      "sha256": "f50a6f8bc4518eb4a3df9c9726f33d37ef73f7bc6f2ac845cf772c350cfe38cb"
++    },
++    {
++      "source": "assets/fonts/firacode-600.ttf",
++      "file": "assets/fonts/firacode-600.ttf",
++      "sha256": "a4d23253c085549ee11a66a18f77aaa5703ebb44bcb4739c4c53c3f26040d863"
+     }
+   ]
+ }
+diff --git a/site/assets/pagelove-design/DESIGN.md b/site/assets/pagelove-design/DESIGN.md
+index d0e4f2b..9c23abd 100644
+--- a/site/assets/pagelove-design/DESIGN.md
++++ b/site/assets/pagelove-design/DESIGN.md
+@@ -1,38 +1,38 @@
+ ---
+-"name": "Midnight"
++"name": "Classic"
+ "colors":
+-  "primary": "#dcd4ec"
+-  "neutral": "#100d17"
+-  "accent": "#b491ec"
+-  "border": "#33283f"
++  "primary": "#334155"
++  "neutral": "#ffffff"
++  "accent": "#1f64f1"
++  "border": "#cbd5e1"
+ "typography":
+   "heading":
+-    "fontFamily": "Inter"
++    "fontFamily": "Source Serif 4"
+     "fontSize": "2.75rem"
+     "fontWeight": 400
+     "lineHeight": 1.1
+-    "letterSpacing": "-.04em"
++    "letterSpacing": "-.025em"
+   "body":
+     "fontFamily": "Inter"
+     "fontSize": "1rem"
+     "fontWeight": 400
+     "lineHeight": 1.5
+ "rounded":
+-  "card": "8px"
+-  "button": "8px"
++  "card": "12px"
++  "button": "100px"
+ "spacing":
+   "small": "8px"
+   "medium": "16px"
+-  "large": "20px"
++  "large": "24px"
+ ---
+ 
+-# Midnight
++# Classic
+ 
+ ## Overview
+ 
+ Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
+ 
+-Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: dark. Initial mode: dark.
++Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: light, dark. Initial mode: light.
+ 
+ ## Colors
+ 
+diff --git a/site/assets/pagelove-design/assets/fonts/firacode-400.ttf b/site/assets/pagelove-design/assets/fonts/firacode-400.ttf
+new file mode 100644
+index 0000000..8ff1c40
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/firacode-400.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/firacode-500.ttf b/site/assets/pagelove-design/assets/fonts/firacode-500.ttf
+new file mode 100644
+index 0000000..8ba160b
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/firacode-500.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/firacode-600.ttf b/site/assets/pagelove-design/assets/fonts/firacode-600.ttf
+new file mode 100644
+index 0000000..d26efda
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/firacode-600.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/firacode-OFL.txt b/site/assets/pagelove-design/assets/fonts/firacode-OFL.txt
+new file mode 100644
+index 0000000..e6c7285
+--- /dev/null
++++ b/site/assets/pagelove-design/assets/fonts/firacode-OFL.txt
+@@ -0,0 +1,93 @@
++Copyright 2014-2020 The Fira Code Project Authors
++
++This Font Software is licensed under the SIL Open Font License, Version 1.1.
++This license is copied below, and is also available with a FAQ at:
++https://scripts.sil.org/OFL
++
++
++-----------------------------------------------------------
++SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
++-----------------------------------------------------------
++
++PREAMBLE
++The goals of the Open Font License (OFL) are to stimulate worldwide
++development of collaborative font projects, to support the font creation
++efforts of academic and linguistic communities, and to provide a free and
++open framework in which fonts may be shared and improved in partnership
++with others.
++
++The OFL allows the licensed fonts to be used, studied, modified and
++redistributed freely as long as they are not sold by themselves. The
++fonts, including any derivative works, can be bundled, embedded,
++redistributed and/or sold with any software provided that any reserved
++names are not used by derivative works. The fonts and derivatives,
++however, cannot be released under any other type of license. The
++requirement for fonts to remain under this license does not apply
++to any document created using the fonts or their derivatives.
++
++DEFINITIONS
++"Font Software" refers to the set of files released by the Copyright
++Holder(s) under this license and clearly marked as such. This may
++include source files, build scripts and documentation.
++
++"Reserved Font Name" refers to any names specified as such after the
++copyright statement(s).
++
++"Original Version" refers to the collection of Font Software components as
++distributed by the Copyright Holder(s).
++
++"Modified Version" refers to any derivative made by adding to, deleting,
++or substituting -- in part or in whole -- any of the components of the
++Original Version, by changing formats or by porting the Font Software to a
++new environment.
++
++"Author" refers to any designer, engineer, programmer, technical
++writer or other person who contributed to the Font Software.
++
++PERMISSION & CONDITIONS
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of the Font Software, to use, study, copy, merge, embed, modify,
++redistribute, and sell modified and unmodified copies of the Font
++Software, subject to the following conditions:
++
++1) Neither the Font Software nor any of its individual components,
++in Original or Modified Versions, may be sold by itself.
++
++2) Original or Modified Versions of the Font Software may be bundled,
++redistributed and/or sold with any software, provided that each copy
++contains the above copyright notice and this license. These can be
++included either as stand-alone text files, human-readable headers or
++in the appropriate machine-readable metadata fields within text or
++binary files as long as those fields can be easily viewed by the user.
++
++3) No Modified Version of the Font Software may use the Reserved Font
++Name(s) unless explicit written permission is granted by the corresponding
++Copyright Holder. This restriction only applies to the primary font name as
++presented to the users.
++
++4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
++Software shall not be used to promote, endorse or advertise any
++Modified Version, except to acknowledge the contribution(s) of the
++Copyright Holder(s) and the Author(s) or with their explicit written
++permission.
++
++5) The Font Software, modified or unmodified, in part or in whole,
++must be distributed entirely under this license, and must not be
++distributed under any other license. The requirement for fonts to
++remain under this license does not apply to any document created
++using the Font Software.
++
++TERMINATION
++This license becomes null and void if any of the above conditions are
++not met.
++
++DISCLAIMER
++THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
++OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
++COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
++INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
++DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
++OTHER DEALINGS IN THE FONT SOFTWARE.
+diff --git a/site/assets/pagelove-design/assets/fonts/sourceserif4-400.ttf b/site/assets/pagelove-design/assets/fonts/sourceserif4-400.ttf
+new file mode 100644
+index 0000000..2d8a874
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/sourceserif4-400.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/sourceserif4-500.ttf b/site/assets/pagelove-design/assets/fonts/sourceserif4-500.ttf
+new file mode 100644
+index 0000000..5dbc7c0
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/sourceserif4-500.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/sourceserif4-600.ttf b/site/assets/pagelove-design/assets/fonts/sourceserif4-600.ttf
+new file mode 100644
+index 0000000..7a50efa
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/sourceserif4-600.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/sourceserif4-OFL.txt b/site/assets/pagelove-design/assets/fonts/sourceserif4-OFL.txt
+new file mode 100644
+index 0000000..cf13e66
+--- /dev/null
++++ b/site/assets/pagelove-design/assets/fonts/sourceserif4-OFL.txt
+@@ -0,0 +1,93 @@
++Copyright 2014 The Source Serif 4 Project Authors
++
++This Font Software is licensed under the SIL Open Font License, Version 1.1.
++This license is copied below, and is also available with a FAQ at:
++https://openfontlicense.org
++
++
++-----------------------------------------------------------
++SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
++-----------------------------------------------------------
++
++PREAMBLE
++The goals of the Open Font License (OFL) are to stimulate worldwide
++development of collaborative font projects, to support the font creation
++efforts of academic and linguistic communities, and to provide a free and
++open framework in which fonts may be shared and improved in partnership
++with others.
++
++The OFL allows the licensed fonts to be used, studied, modified and
++redistributed freely as long as they are not sold by themselves. The
++fonts, including any derivative works, can be bundled, embedded,
++redistributed and/or sold with any software provided that any reserved
++names are not used by derivative works. The fonts and derivatives,
++however, cannot be released under any other type of license. The
++requirement for fonts to remain under this license does not apply
++to any document created using the fonts or their derivatives.
++
++DEFINITIONS
++"Font Software" refers to the set of files released by the Copyright
++Holder(s) under this license and clearly marked as such. This may
++include source files, build scripts and documentation.
++
++"Reserved Font Name" refers to any names specified as such after the
++copyright statement(s).
++
++"Original Version" refers to the collection of Font Software components as
++distributed by the Copyright Holder(s).
++
++"Modified Version" refers to any derivative made by adding to, deleting,
++or substituting -- in part or in whole -- any of the components of the
++Original Version, by changing formats or by porting the Font Software to a
++new environment.
++
++"Author" refers to any designer, engineer, programmer, technical
++writer or other person who contributed to the Font Software.
++
++PERMISSION & CONDITIONS
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of the Font Software, to use, study, copy, merge, embed, modify,
++redistribute, and sell modified and unmodified copies of the Font
++Software, subject to the following conditions:
++
++1) Neither the Font Software nor any of its individual components,
++in Original or Modified Versions, may be sold by itself.
++
++2) Original or Modified Versions of the Font Software may be bundled,
++redistributed and/or sold with any software, provided that each copy
++contains the above copyright notice and this license. These can be
++included either as stand-alone text files, human-readable headers or
++in the appropriate machine-readable metadata fields within text or
++binary files as long as those fields can be easily viewed by the user.
++
++3) No Modified Version of the Font Software may use the Reserved Font
++Name(s) unless explicit written permission is granted by the corresponding
++Copyright Holder. This restriction only applies to the primary font name as
++presented to the users.
++
++4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
++Software shall not be used to promote, endorse or advertise any
++Modified Version, except to acknowledge the contribution(s) of the
++Copyright Holder(s) and the Author(s) or with their explicit written
++permission.
++
++5) The Font Software, modified or unmodified, in part or in whole,
++must be distributed entirely under this license, and must not be
++distributed under any other license. The requirement for fonts to
++remain under this license does not apply to any document created
++using the Font Software.
++
++TERMINATION
++This license becomes null and void if any of the above conditions are
++not met.
++
++DISCLAIMER
++THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
++OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
++COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
++INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
++DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
++OTHER DEALINGS IN THE FONT SOFTWARE.
+diff --git a/site/assets/pagelove-design/fonts.css b/site/assets/pagelove-design/fonts.css
+index 9d01696..54eca05 100644
+--- a/site/assets/pagelove-design/fonts.css
++++ b/site/assets/pagelove-design/fonts.css
+@@ -1,3 +1,9 @@
+ @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/inter-400.ttf') format('truetype')}
+ @font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/inter-500.ttf') format('truetype')}
+ @font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/inter-600.ttf') format('truetype')}
++@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/sourceserif4-400.ttf') format('truetype')}
++@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/sourceserif4-500.ttf') format('truetype')}
++@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/sourceserif4-600.ttf') format('truetype')}
++@font-face{font-family:'Fira Code';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/firacode-400.ttf') format('truetype')}
++@font-face{font-family:'Fira Code';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/firacode-500.ttf') format('truetype')}
++@font-face{font-family:'Fira Code';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/firacode-600.ttf') format('truetype')}
+diff --git a/site/assets/pagelove-design/theme.css b/site/assets/pagelove-design/theme.css
+index f4425aa..3b0cea6 100644
+--- a/site/assets/pagelove-design/theme.css
++++ b/site/assets/pagelove-design/theme.css
+@@ -1,19 +1,19 @@
+ :root { color-scheme: var(--design-color-scheme); }
+ /* Generated from tokens/foundations.json. */
+ :root {
+-  --color-polo-blue-0: #f3efff;
+-  --color-polo-blue-50: #e8e2f7;
+-  --color-polo-blue-100: #dcd4ec;
+-  --color-polo-blue-200: #c9bfdc;
+-  --color-polo-blue-300: #aea2c6;
+-  --color-polo-blue-400: #9284ac;
+-  --color-polo-blue-500: #78698e;
+-  --color-polo-blue-600: #5d5070;
+-  --color-polo-blue-700: #453954;
+-  --color-polo-blue-800: #33283f;
+-  --color-polo-blue-900: #241c30;
+-  --color-polo-blue-950: #191321;
+-  --color-polo-blue-1000: #100d17;
++  --color-polo-blue-0: #ffffff;
++  --color-polo-blue-50: #f8fafc;
++  --color-polo-blue-100: #f1f5f9;
++  --color-polo-blue-200: #e2e8f0;
++  --color-polo-blue-300: #cbd5e1;
++  --color-polo-blue-400: #94a3b8;
++  --color-polo-blue-500: #64748b;
++  --color-polo-blue-600: #475569;
++  --color-polo-blue-700: #334155;
++  --color-polo-blue-800: #1e293b;
++  --color-polo-blue-900: #0f172a;
++  --color-polo-blue-950: #020617;
++  --color-polo-blue-1000: #000208;
+   --color-purple-50: #f1f4fc;
+   --color-purple-100: #e6eaf9;
+   --color-purple-200: #ced5f2;
+@@ -69,17 +69,17 @@
+   --color-neon-carrot-800: #9d390f;
+   --color-neon-carrot-900: #7e3110;
+   --color-neon-carrot-950: #441606;
+-  --color-cornflower-blue-50: #f4efff;
+-  --color-cornflower-blue-100: #e9deff;
+-  --color-cornflower-blue-200: #d7c4ff;
+-  --color-cornflower-blue-300: #c5a9f7;
+-  --color-cornflower-blue-400: #b491ec;
+-  --color-cornflower-blue-500: #9370cf;
+-  --color-cornflower-blue-600: #7654ac;
+-  --color-cornflower-blue-700: #5f408e;
+-  --color-cornflower-blue-800: #4d3374;
+-  --color-cornflower-blue-900: #3e2a5c;
+-  --color-cornflower-blue-950: #261c37;
++  --color-cornflower-blue-50: #eef6ff;
++  --color-cornflower-blue-100: #daeaff;
++  --color-cornflower-blue-200: #bddbff;
++  --color-cornflower-blue-300: #90c6ff;
++  --color-cornflower-blue-400: #59a6ff;
++  --color-cornflower-blue-500: #3584fc;
++  --color-cornflower-blue-600: #1f64f1;
++  --color-cornflower-blue-700: #174ede;
++  --color-cornflower-blue-800: #1940b4;
++  --color-cornflower-blue-900: #1a3a8e;
++  --color-cornflower-blue-950: #152556;
+   --color-malachite-50: #f0fdf0;
+   --color-malachite-100: #ddfbdf;
+   --color-malachite-200: #bdf5c1;
+@@ -125,7 +125,7 @@
+   --space-025: 2px;
+   --space-050: 4px;
+   --space-075: 6px;
+-  --font-family-brand: Inter, system-ui, sans-serif;
++  --font-family-brand: 'Source Serif 4', Georgia, serif;
+   --font-family-secondary: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+   --font-family-code: 'Fira Code', ui-monospace, Menlo, Consolas, monospace;
+   --font-weight-400: 400;
+@@ -234,19 +234,19 @@
+   --grid-console-xl-columns: 12;
+   --grid-console-xl-gutter: var(--space-200);
+   --grid-console-xl-margin: var(--space-200);
+-  --design-radius-card: 8px;
+-  --design-radius-button: 8px;
+-  --design-heading-family: var(--font-family-secondary);
++  --design-radius-card: 12px;
++  --design-radius-button: 100px;
++  --design-heading-family: var(--font-family-brand);
+   --design-body-family: var(--font-family-secondary);
+-  --design-content-width: 1200px;
+-  --design-section-gap: 20px;
++  --design-content-width: 1120px;
++  --design-section-gap: 24px;
+   --design-shadow-panel: none;
+   --design-page-padding: 40px;
+   --design-panel-padding: 24px;
+-  --design-row-padding: 18px;
+-  --design-radius-input: 6px;
++  --design-row-padding: 20px;
++  --design-radius-input: 8px;
+   --design-title-size: 2.75rem;
+-  --design-heading-tracking: -.04em;
++  --design-heading-tracking: -.025em;
+   --design-transition-duration: 160ms;
+   --design-text-small: 0.875rem;
+   --design-text-caption: 0.75rem;
+@@ -255,116 +255,228 @@
+ }
+ /* Generated from tokens/semantic.json. */
+ :root {
+-  --background-brand-light: var(--color-olive-950);
+-  --background-brand-regular: var(--color-olive-800);
+-  --background-brand-strong: var(--color-olive-600);
+-  --background-danger-light: var(--color-torch-red-950);
+-  --background-danger-regular: var(--color-torch-red-800);
+-  --background-danger-strong: var(--color-torch-red-600);
++  --background-brand-light: var(--color-olive-50);
++  --background-brand-regular: var(--color-olive-200);
++  --background-brand-strong: var(--color-olive-400);
++  --background-danger-light: var(--color-torch-red-50);
++  --background-danger-regular: var(--color-torch-red-200);
++  --background-danger-strong: var(--color-torch-red-400);
+   --background-disabled: var(--color-polo-blue-500);
+-  --background-discovery-light: var(--color-purple-950);
+-  --background-discovery-regular: var(--color-purple-800);
+-  --background-discovery-strong: var(--color-purple-600);
+-  --background-elevation-light: var(--color-polo-blue-1000);
+-  --background-elevation-regular: var(--color-polo-blue-900);
+-  --background-elevation-strong: var(--color-polo-blue-800);
+-  --background-information-light: var(--color-cornflower-blue-950);
+-  --background-information-regular: var(--color-cornflower-blue-800);
+-  --background-information-strong: var(--color-cornflower-blue-600);
+-  --background-neutral-hovered: var(--color-polo-blue-950);
+-  --background-neutral-pressed: var(--color-polo-blue-900);
+-  --background-neutral-selected: var(--color-polo-blue-950);
+-  --background-success-light: var(--color-malachite-950);
+-  --background-success-regular: var(--color-malachite-800);
+-  --background-success-strong: var(--color-malachite-600);
+-  --background-surface-light: var(--color-polo-blue-1000);
+-  --background-surface-regular: var(--color-polo-blue-950);
+-  --background-surface-strong: var(--color-polo-blue-900);
+-  --background-warning-light: var(--color-neon-carrot-950);
+-  --background-warning-regular: var(--color-neon-carrot-800);
+-  --background-warning-strong: var(--color-neon-carrot-600);
++  --background-discovery-light: var(--color-purple-50);
++  --background-discovery-regular: var(--color-purple-200);
++  --background-discovery-strong: var(--color-purple-400);
++  --background-elevation-light: var(--color-polo-blue-0);
++  --background-elevation-regular: var(--color-polo-blue-100);
++  --background-elevation-strong: var(--color-polo-blue-200);
++  --background-information-light: var(--color-cornflower-blue-50);
++  --background-information-regular: var(--color-cornflower-blue-200);
++  --background-information-strong: var(--color-cornflower-blue-400);
++  --background-neutral-hovered: var(--color-polo-blue-50);
++  --background-neutral-pressed: var(--color-polo-blue-100);
++  --background-neutral-selected: var(--color-polo-blue-50);
++  --background-success-light: var(--color-malachite-50);
++  --background-success-regular: var(--color-malachite-200);
++  --background-success-strong: var(--color-malachite-400);
++  --background-surface-light: var(--color-polo-blue-0);
++  --background-surface-regular: var(--color-polo-blue-50);
++  --background-surface-strong: var(--color-polo-blue-100);
++  --background-warning-light: var(--color-neon-carrot-50);
++  --background-warning-regular: var(--color-neon-carrot-200);
++  --background-warning-strong: var(--color-neon-carrot-400);
+   --border-brand: var(--color-olive-500);
+-  --border-danger: var(--color-torch-red-800);
+-  --border-danger-light: var(--color-torch-red-800);
+-  --border-danger-strong: var(--color-torch-red-400);
+-  --border-disabled: var(--color-polo-blue-900);
+-  --border-discovery: var(--color-purple-800);
+-  --border-focused: var(--color-cornflower-blue-400);
+-  --border-information: var(--color-cornflower-blue-800);
+-  --border-inverse: var(--color-polo-blue-300);
+-  --border-light: var(--color-polo-blue-900);
+-  --border-regular: var(--color-polo-blue-800);
+-  --border-selected: var(--color-cornflower-blue-300);
++  --border-danger: var(--color-torch-red-200);
++  --border-danger-light: var(--color-torch-red-200);
++  --border-danger-strong: var(--color-torch-red-600);
++  --border-disabled: var(--color-polo-blue-100);
++  --border-discovery: var(--color-purple-200);
++  --border-focused: var(--color-cornflower-blue-600);
++  --border-information: var(--color-cornflower-blue-200);
++  --border-inverse: var(--color-polo-blue-700);
++  --border-light: var(--color-polo-blue-100);
++  --border-regular: var(--color-polo-blue-300);
++  --border-selected: var(--color-cornflower-blue-600);
+   --border-strong: var(--color-polo-blue-500);
+-  --border-success: var(--color-malachite-800);
+-  --border-warning: var(--color-neon-carrot-800);
+-  --button-borderless-icon-default: var(--color-polo-blue-100);
+-  --button-borderless-icon-disabled: var(--color-polo-blue-500);
+-  --button-borderless-icon-hovered: var(--color-polo-blue-50);
+-  --button-borderless-icon-pressed: var(--color-polo-blue-0);
+-  --button-borderless-icon-selected: var(--color-polo-blue-100);
+-  --button-borderless-text-default: var(--color-polo-blue-100);
+-  --button-borderless-text-disabled: var(--color-polo-blue-500);
+-  --button-borderless-text-hovered: var(--color-polo-blue-50);
+-  --button-borderless-text-pressed: var(--color-polo-blue-0);
+-  --button-borderless-text-selected: var(--color-polo-blue-100);
+-  --button-gradient-bg-default: var(--color-polo-blue-1000);
+-  --button-gradient-bg-disabled: var(--color-polo-blue-1000);
+-  --button-gradient-bg-hovered: var(--color-polo-blue-950);
+-  --button-gradient-bg-pressed: var(--color-polo-blue-900);
+-  --button-gradient-bg-selected: var(--color-polo-blue-900);
+-  --button-regular-default: var(--color-polo-blue-900);
+-  --button-regular-disabled: var(--color-polo-blue-950);
+-  --button-regular-hovered: var(--color-polo-blue-950);
+-  --button-regular-pressed: var(--color-polo-blue-900);
+-  --button-regular-text: var(--color-polo-blue-200);
+-  --button-secondary-icon-default: var(--color-polo-blue-100);
++  --border-success: var(--color-malachite-200);
++  --border-warning: var(--color-neon-carrot-200);
++  --button-borderless-icon-default: var(--color-polo-blue-600);
++  --button-borderless-icon-disabled: var(--color-polo-blue-400);
++  --button-borderless-icon-hovered: var(--color-polo-blue-800);
++  --button-borderless-icon-pressed: var(--color-polo-blue-900);
++  --button-borderless-icon-selected: var(--color-polo-blue-900);
++  --button-borderless-text-default: var(--color-polo-blue-600);
++  --button-borderless-text-disabled: var(--color-polo-blue-400);
++  --button-borderless-text-hovered: var(--color-polo-blue-800);
++  --button-borderless-text-pressed: var(--color-polo-blue-900);
++  --button-borderless-text-selected: var(--color-polo-blue-900);
++  --button-gradient-bg-default: var(--color-polo-blue-0);
++  --button-gradient-bg-disabled: var(--color-polo-blue-0);
++  --button-gradient-bg-hovered: var(--color-polo-blue-50);
++  --button-gradient-bg-pressed: var(--color-polo-blue-100);
++  --button-gradient-bg-selected: var(--color-polo-blue-100);
++  --button-regular-default: var(--color-polo-blue-100);
++  --button-regular-disabled: var(--color-polo-blue-50);
++  --button-regular-hovered: var(--color-polo-blue-50);
++  --button-regular-pressed: var(--color-polo-blue-100);
++  --button-regular-text: var(--color-polo-blue-800);
++  --button-secondary-icon-default: var(--color-polo-blue-600);
+   --button-secondary-icon-disabled: var(--color-polo-blue-500);
+-  --button-secondary-icon-hovered: var(--color-polo-blue-50);
+-  --button-secondary-icon-pressed: var(--color-polo-blue-0);
+-  --button-secondary-icon-selected: var(--color-polo-blue-100);
+-  --button-secondary-text-default: var(--color-polo-blue-100);
++  --button-secondary-icon-hovered: var(--color-polo-blue-950);
++  --button-secondary-icon-pressed: var(--color-polo-blue-1000);
++  --button-secondary-icon-selected: var(--color-polo-blue-900);
++  --button-secondary-text-default: var(--color-polo-blue-600);
+   --button-secondary-text-disabled: var(--color-polo-blue-500);
+-  --button-secondary-text-hovered: var(--color-polo-blue-50);
+-  --button-secondary-text-pressed: var(--color-polo-blue-0);
+-  --button-secondary-text-selected: var(--color-polo-blue-100);
+-  --button-strong-default: var(--color-polo-blue-200);
+-  --button-strong-disabled: var(--color-polo-blue-600);
+-  --button-strong-hovered: var(--color-polo-blue-300);
+-  --button-strong-pressed: var(--color-polo-blue-400);
+-  --button-strong-text: var(--color-polo-blue-1000);
+-  --icon-brand: var(--color-olive-300);
+-  --icon-danger: var(--color-torch-red-300);
+-  --icon-disabled: var(--color-polo-blue-600);
+-  --icon-discovery: var(--color-purple-300);
+-  --icon-information: var(--color-cornflower-blue-300);
+-  --icon-inverse: var(--color-polo-blue-950);
+-  --icon-light: var(--color-polo-blue-300);
+-  --icon-regular: var(--color-polo-blue-100);
+-  --icon-selected: var(--color-polo-blue-50);
+-  --icon-strong: var(--color-polo-blue-0);
+-  --icon-success: var(--color-malachite-300);
+-  --icon-warning: var(--color-neon-carrot-300);
+-  --link-icon-default: var(--color-cornflower-blue-400);
+-  --link-icon-hover: var(--color-cornflower-blue-300);
+-  --link-icon-inverse: var(--color-cornflower-blue-600);
+-  --link-icon-pressed: var(--color-cornflower-blue-200);
+-  --link-text-default: var(--color-cornflower-blue-400);
+-  --link-text-hover: var(--color-cornflower-blue-300);
+-  --link-text-pressed: var(--color-cornflower-blue-200);
++  --button-secondary-text-hovered: var(--color-polo-blue-800);
++  --button-secondary-text-pressed: var(--color-polo-blue-900);
++  --button-secondary-text-selected: var(--color-polo-blue-900);
++  --button-strong-default: var(--color-polo-blue-800);
++  --button-strong-disabled: var(--color-polo-blue-300);
++  --button-strong-hovered: var(--color-polo-blue-900);
++  --button-strong-pressed: var(--color-polo-blue-950);
++  --button-strong-text: var(--color-polo-blue-0);
++  --icon-brand: var(--color-olive-700);
++  --icon-danger: var(--color-torch-red-700);
++  --icon-disabled: var(--color-polo-blue-400);
++  --icon-discovery: var(--color-purple-700);
++  --icon-information: var(--color-cornflower-blue-700);
++  --icon-inverse: var(--color-polo-blue-50);
++  --icon-light: var(--color-polo-blue-500);
++  --icon-regular: var(--color-polo-blue-700);
++  --icon-selected: var(--color-polo-blue-950);
++  --icon-strong: var(--color-polo-blue-950);
++  --icon-success: var(--color-malachite-700);
++  --icon-warning: var(--color-neon-carrot-700);
++  --link-icon-default: var(--color-cornflower-blue-600);
++  --link-icon-hover: var(--color-cornflower-blue-700);
++  --link-icon-inverse: var(--color-cornflower-blue-300);
++  --link-icon-pressed: var(--color-cornflower-blue-800);
++  --link-text-default: var(--color-cornflower-blue-600);
++  --link-text-hover: var(--color-cornflower-blue-700);
++  --link-text-pressed: var(--color-cornflower-blue-800);
+   --link-text-visited: var(--color-cornflower-blue-500);
+-  --text-brand: var(--color-olive-300);
+-  --text-danger: var(--color-torch-red-300);
+-  --text-disabled: var(--color-polo-blue-600);
+-  --text-discovery: var(--color-purple-300);
+-  --text-information: var(--color-cornflower-blue-300);
+-  --text-inverse: var(--color-polo-blue-950);
+-  --text-light: var(--color-polo-blue-300);
+-  --text-regular: var(--color-polo-blue-100);
+-  --text-selected: var(--color-polo-blue-50);
+-  --text-strong: var(--color-polo-blue-0);
+-  --text-success: var(--color-malachite-300);
+-  --text-warning: var(--color-neon-carrot-300);
++  --text-brand: var(--color-olive-700);
++  --text-danger: var(--color-torch-red-700);
++  --text-disabled: var(--color-polo-blue-400);
++  --text-discovery: var(--color-purple-700);
++  --text-information: var(--color-cornflower-blue-700);
++  --text-inverse: var(--color-polo-blue-50);
++  --text-light: var(--color-polo-blue-500);
++  --text-regular: var(--color-polo-blue-700);
++  --text-selected: var(--color-polo-blue-950);
++  --text-strong: var(--color-polo-blue-950);
++  --text-success: var(--color-malachite-700);
++  --text-warning: var(--color-neon-carrot-700);
++}
++[data-theme="light"] {
++  --background-brand-light: var(--color-olive-50);
++  --background-brand-regular: var(--color-olive-200);
++  --background-brand-strong: var(--color-olive-400);
++  --background-danger-light: var(--color-torch-red-50);
++  --background-danger-regular: var(--color-torch-red-200);
++  --background-danger-strong: var(--color-torch-red-400);
++  --background-disabled: var(--color-polo-blue-500);
++  --background-discovery-light: var(--color-purple-50);
++  --background-discovery-regular: var(--color-purple-200);
++  --background-discovery-strong: var(--color-purple-400);
++  --background-elevation-light: var(--color-polo-blue-0);
++  --background-elevation-regular: var(--color-polo-blue-100);
++  --background-elevation-strong: var(--color-polo-blue-200);
++  --background-information-light: var(--color-cornflower-blue-50);
++  --background-information-regular: var(--color-cornflower-blue-200);
++  --background-information-strong: var(--color-cornflower-blue-400);
++  --background-neutral-hovered: var(--color-polo-blue-50);
++  --background-neutral-pressed: var(--color-polo-blue-100);
++  --background-neutral-selected: var(--color-polo-blue-50);
++  --background-success-light: var(--color-malachite-50);
++  --background-success-regular: var(--color-malachite-200);
++  --background-success-strong: var(--color-malachite-400);
++  --background-surface-light: var(--color-polo-blue-0);
++  --background-surface-regular: var(--color-polo-blue-50);
++  --background-surface-strong: var(--color-polo-blue-100);
++  --background-warning-light: var(--color-neon-carrot-50);
++  --background-warning-regular: var(--color-neon-carrot-200);
++  --background-warning-strong: var(--color-neon-carrot-400);
++  --border-brand: var(--color-olive-500);
++  --border-danger: var(--color-torch-red-200);
++  --border-danger-light: var(--color-torch-red-200);
++  --border-danger-strong: var(--color-torch-red-600);
++  --border-disabled: var(--color-polo-blue-100);
++  --border-discovery: var(--color-purple-200);
++  --border-focused: var(--color-cornflower-blue-600);
++  --border-information: var(--color-cornflower-blue-200);
++  --border-inverse: var(--color-polo-blue-700);
++  --border-light: var(--color-polo-blue-100);
++  --border-regular: var(--color-polo-blue-300);
++  --border-selected: var(--color-cornflower-blue-600);
++  --border-strong: var(--color-polo-blue-500);
++  --border-success: var(--color-malachite-200);
++  --border-warning: var(--color-neon-carrot-200);
++  --button-borderless-icon-default: var(--color-polo-blue-600);
++  --button-borderless-icon-disabled: var(--color-polo-blue-400);
++  --button-borderless-icon-hovered: var(--color-polo-blue-800);
++  --button-borderless-icon-pressed: var(--color-polo-blue-900);
++  --button-borderless-icon-selected: var(--color-polo-blue-900);
++  --button-borderless-text-default: var(--color-polo-blue-600);
++  --button-borderless-text-disabled: var(--color-polo-blue-400);
++  --button-borderless-text-hovered: var(--color-polo-blue-800);
++  --button-borderless-text-pressed: var(--color-polo-blue-900);
++  --button-borderless-text-selected: var(--color-polo-blue-900);
++  --button-gradient-bg-default: var(--color-polo-blue-0);
++  --button-gradient-bg-disabled: var(--color-polo-blue-0);
++  --button-gradient-bg-hovered: var(--color-polo-blue-50);
++  --button-gradient-bg-pressed: var(--color-polo-blue-100);
++  --button-gradient-bg-selected: var(--color-polo-blue-100);
++  --button-regular-default: var(--color-polo-blue-100);
++  --button-regular-disabled: var(--color-polo-blue-50);
++  --button-regular-hovered: var(--color-polo-blue-50);
++  --button-regular-pressed: var(--color-polo-blue-100);
++  --button-regular-text: var(--color-polo-blue-800);
++  --button-secondary-icon-default: var(--color-polo-blue-600);
++  --button-secondary-icon-disabled: var(--color-polo-blue-500);
++  --button-secondary-icon-hovered: var(--color-polo-blue-950);
++  --button-secondary-icon-pressed: var(--color-polo-blue-1000);
++  --button-secondary-icon-selected: var(--color-polo-blue-900);
++  --button-secondary-text-default: var(--color-polo-blue-600);
++  --button-secondary-text-disabled: var(--color-polo-blue-500);
++  --button-secondary-text-hovered: var(--color-polo-blue-800);
++  --button-secondary-text-pressed: var(--color-polo-blue-900);
++  --button-secondary-text-selected: var(--color-polo-blue-900);
++  --button-strong-default: var(--color-polo-blue-800);
++  --button-strong-disabled: var(--color-polo-blue-300);
++  --button-strong-hovered: var(--color-polo-blue-900);
++  --button-strong-pressed: var(--color-polo-blue-950);
++  --button-strong-text: var(--color-polo-blue-0);
++  --icon-brand: var(--color-olive-700);
++  --icon-danger: var(--color-torch-red-700);
++  --icon-disabled: var(--color-polo-blue-400);
++  --icon-discovery: var(--color-purple-700);
++  --icon-information: var(--color-cornflower-blue-700);
++  --icon-inverse: var(--color-polo-blue-50);
++  --icon-light: var(--color-polo-blue-500);
++  --icon-regular: var(--color-polo-blue-700);
++  --icon-selected: var(--color-polo-blue-950);
++  --icon-strong: var(--color-polo-blue-950);
++  --icon-success: var(--color-malachite-700);
++  --icon-warning: var(--color-neon-carrot-700);
++  --link-icon-default: var(--color-cornflower-blue-600);
++  --link-icon-hover: var(--color-cornflower-blue-700);
++  --link-icon-inverse: var(--color-cornflower-blue-300);
++  --link-icon-pressed: var(--color-cornflower-blue-800);
++  --link-text-default: var(--color-cornflower-blue-600);
++  --link-text-hover: var(--color-cornflower-blue-700);
++  --link-text-pressed: var(--color-cornflower-blue-800);
++  --link-text-visited: var(--color-cornflower-blue-500);
++  --text-brand: var(--color-olive-700);
++  --text-danger: var(--color-torch-red-700);
++  --text-disabled: var(--color-polo-blue-400);
++  --text-discovery: var(--color-purple-700);
++  --text-information: var(--color-cornflower-blue-700);
++  --text-inverse: var(--color-polo-blue-50);
++  --text-light: var(--color-polo-blue-500);
++  --text-regular: var(--color-polo-blue-700);
++  --text-selected: var(--color-polo-blue-950);
++  --text-strong: var(--color-polo-blue-950);
++  --text-success: var(--color-malachite-700);
++  --text-warning: var(--color-neon-carrot-700);
+ }
+ [data-theme="dark"] {
+   --background-brand-light: var(--color-olive-950);
+@@ -479,25 +591,28 @@
+   --text-warning: var(--color-neon-carrot-300);
+ }
+ :root {
+-  --design-radius-card: 8px;
+-  --design-radius-button: 8px;
+-  --design-heading-family: var(--font-family-secondary);
++  --design-radius-card: 12px;
++  --design-radius-button: 100px;
++  --design-heading-family: var(--font-family-brand);
+   --design-body-family: var(--font-family-secondary);
+-  --design-content-width: 1200px;
+-  --design-section-gap: 20px;
++  --design-content-width: 1120px;
++  --design-section-gap: 24px;
+   --design-shadow-panel: none;
+   --design-page-padding: 40px;
+   --design-panel-padding: 24px;
+-  --design-row-padding: 18px;
+-  --design-radius-input: 6px;
++  --design-row-padding: 20px;
++  --design-radius-input: 8px;
+   --design-title-size: 2.75rem;
+-  --design-heading-tracking: -.04em;
++  --design-heading-tracking: -.025em;
+   --design-transition-duration: 160ms;
+   --design-text-small: 0.875rem;
+   --design-text-caption: 0.75rem;
+   --design-title-size-mobile: 2.25rem;
+   --design-press-offset: 1px;
+-  --design-color-scheme: dark;
++  --design-color-scheme: light;
++}
++[data-theme="light"] {
++  --design-color-scheme: light;
+ }
+ [data-theme="dark"] {
+   --design-color-scheme: dark;
+diff --git a/site/index.html b/site/index.html
+index c9a40be..f7b5105 100644
+--- a/site/index.html
++++ b/site/index.html
+@@ -1 +1 @@
+-<!doctype html><html data-design="midnight" lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A simple record of money in, money out and the room between. Manual entries, clear totals."><title>Everyday Budget</title><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head><body data-app="budget"><a href="#main" class="skip">Skip to content</a><header class="topbar"><a class="brand" href="./"><span aria-hidden="true" class="brand-mark">EB</span>Everyday Budget</a><nav class="actions" aria-label="Application"><button id="manage" type="button" aria-pressed="false" class="pl-button pl-button--outlined pl-button--md">Manage content</button></nav></header><main id="main"><section class="hero"><h1>Know where it goes.</h1><p>A simple record of money in, money out and the room between. Manual entries, clear totals.</p><p class="sample-note">Fictional sample · Private access must be configured and verified before real use.</p></section><section class="workspace" aria-label="transactions"><div class="toolbar"><label class="search" for="search">Search transactions<input id="search" type="search" autocomplete="off"></label><div class="actions"><button id="add" type="button" data-edit-only="" hidden class="pl-button pl-button--strong pl-button--md">Add transaction</button><button id="save" type="button" data-edit-only="" hidden disabled class="pl-button pl-button--strong pl-button--md">Save changes</button></div></div><p id="summary" class="summary"></p><p id="status" class="status" role="status" aria-live="polite">Loading source…</p><section id="recovery" class="recovery" hidden><h2>Your local draft is available</h2><p>Recover it for editing, or export it before reloading.</p><div class="actions"><button id="recover" type="button" class="pl-button pl-button--outlined pl-button--md">Recover draft</button><button id="download-draft" type="button" class="pl-button pl-button--outlined pl-button--md">Export draft</button></div></section><p id="result-count"></p><div id="collection" class="collection"></div><details data-edit-only="" hidden><summary>Export, import and recovery</summary><p>Exports include all records, including drafts. Keep private exports secure. Import replaces only your working draft until a save is accepted.</p><div class="actions"><button id="export" type="button" class="pl-button pl-button--outlined pl-button--md">Export HTML</button><label class="file-control">Import HTML<input id="import" type="file" accept=".html,text/html"></label><button id="reload" type="button" class="pl-button pl-button--outlined pl-button--md">Reload source</button></div></details></section><noscript><p>This editor requires JavaScript. App content is stored as semantic HTML; ask the owner for a permitted reading/export view.</p></noscript></main><footer><span>Everyday Budget · Fictional sample content</span><a href="https://pagelove.com">Made for Pagelove</a></footer><dialog id="editor" aria-labelledby="editor-title"><h2 id="editor-title">Edit transaction</h2><form id="edit-form"><label class="field" for="field-title">Description<input id="field-title" name="title" type="text" maxlength="5000" required></label><label class="field" for="field-date">Date<input id="field-date" name="date" type="date" maxlength="5000" required></label><label class="field" for="field-kind">Type<select required id="field-kind" name="kind"><option value="Income">Income</option><option value="Expense">Expense</option><option value="Transfer">Transfer</option></select></label><label class="field" for="field-category">Category<input id="field-category" name="category" type="text" maxlength="5000" required></label><label class="field" for="field-amount">Amount in USD<input id="field-amount" name="amount" type="text" maxlength="5000" required></label><label class="field" for="field-notes">Notes<textarea id="field-notes" name="notes" maxlength="5000"></textarea></label><p id="editor-error" class="editor-error" role="alert"></p><div class="dialog-actions"><button id="cancel-edit" type="button" class="pl-button pl-button--outlined pl-button--md">Cancel</button><button type="submit" class="pl-button pl-button--strong pl-button--md">Apply to draft</button></div></form></dialog></body></html>
++<!doctype html><html data-design="classic" lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A simple record of money in, money out and the room between. Manual entries, clear totals."><title>Everyday Budget</title><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head><body data-app="budget"><a href="#main" class="skip">Skip to content</a><header class="topbar"><a class="brand" href="./"><span aria-hidden="true" class="brand-mark">EB</span>Everyday Budget</a><nav class="actions" aria-label="Application"><button id="manage" type="button" aria-pressed="false" class="pl-button pl-button--outlined pl-button--md">Manage content</button></nav></header><main id="main"><section class="hero"><h1>Know where it goes.</h1><p>A simple record of money in, money out and the room between. Manual entries, clear totals.</p><p class="sample-note">Fictional sample · Private access must be configured and verified before real use.</p></section><section class="workspace" aria-label="transactions"><div class="toolbar"><label class="search" for="search">Search transactions<input id="search" type="search" autocomplete="off"></label><div class="actions"><button id="add" type="button" data-edit-only="" hidden class="pl-button pl-button--strong pl-button--md">Add transaction</button><button id="save" type="button" data-edit-only="" hidden disabled class="pl-button pl-button--strong pl-button--md">Save changes</button></div></div><p id="summary" class="summary"></p><p id="status" class="status" role="status" aria-live="polite">Loading source…</p><section id="recovery" class="recovery" hidden><h2>Your local draft is available</h2><p>Recover it for editing, or export it before reloading.</p><div class="actions"><button id="recover" type="button" class="pl-button pl-button--outlined pl-button--md">Recover draft</button><button id="download-draft" type="button" class="pl-button pl-button--outlined pl-button--md">Export draft</button></div></section><p id="result-count"></p><div id="collection" class="collection"></div><details data-edit-only="" hidden><summary>Export, import and recovery</summary><p>Exports include all records, including drafts. Keep private exports secure. Import replaces only your working draft until a save is accepted.</p><div class="actions"><button id="export" type="button" class="pl-button pl-button--outlined pl-button--md">Export HTML</button><label class="file-control">Import HTML<input id="import" type="file" accept=".html,text/html"></label><button id="reload" type="button" class="pl-button pl-button--outlined pl-button--md">Reload source</button></div></details></section><noscript><p>This editor requires JavaScript. App content is stored as semantic HTML; ask the owner for a permitted reading/export view.</p></noscript></main><footer><span>Everyday Budget · Fictional sample content</span><a href="https://pagelove.com">Made for Pagelove</a></footer><dialog id="editor" aria-labelledby="editor-title"><h2 id="editor-title">Edit transaction</h2><form id="edit-form"><label class="field" for="field-title">Description<input id="field-title" name="title" type="text" maxlength="5000" required></label><label class="field" for="field-date">Date<input id="field-date" name="date" type="date" maxlength="5000" required></label><label class="field" for="field-kind">Type<select required id="field-kind" name="kind"><option value="Income">Income</option><option value="Expense">Expense</option><option value="Transfer">Transfer</option></select></label><label class="field" for="field-category">Category<input id="field-category" name="category" type="text" maxlength="5000" required></label><label class="field" for="field-amount">Amount in USD<input id="field-amount" name="amount" type="text" maxlength="5000" required></label><label class="field" for="field-notes">Notes<textarea id="field-notes" name="notes" maxlength="5000"></textarea></label><p id="editor-error" class="editor-error" role="alert"></p><div class="dialog-actions"><button id="cancel-edit" type="button" class="pl-button pl-button--outlined pl-button--md">Cancel</button><button type="submit" class="pl-button pl-button--strong pl-button--md">Apply to draft</button></div></form></dialog></body></html>
